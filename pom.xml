@@ -1,0 +1,81 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.sonatype.oss</groupId>
+    <artifactId>oss-parent</artifactId>
+    <version>7</version>
+  </parent>
+  <build>
+	<pluginManagement>
+	  <plugins>
+	    <plugin>
+	      <groupId>org.eclipse.m2e</groupId>
+	      <artifactId>lifecycle-mapping</artifactId>
+	      <version>1.0.0</version>
+	      <configuration>
+	        <lifecycleMappingMetadata>
+	          <pluginExecutions>
+	            <pluginExecution>
+	              <pluginExecutionFilter>
+                  <groupId>org.apache.maven.plugins</groupId>
+	                <artifactId>maven-enforcer-plugin</artifactId>
+	                <versionRange>[1.0.0,)</versionRange>
+	                <goals>
+	                  <goal>enforce</goal>
+	                </goals>
+	              </pluginExecutionFilter>
+	              <action>
+	                <ignore />
+	              </action>
+	            </pluginExecution>
+	          </pluginExecutions>
+	        </lifecycleMappingMetadata>
+	      </configuration>
+	    </plugin>
+	  </plugins>
+	</pluginManagement>
+  </build>
+
+  <groupId>com.github.venkatramanm</groupId>
+  <artifactId>ocr</artifactId>
+  <packaging>jar</packaging>
+  <name>ocr</name>
+  <version>1.11-SNAPSHOT</version>
+
+  <description>Commonly used programming tasks in java</description>
+  <url>http://maven.apache.org</url>
+
+  <licenses>
+    <license>
+      <name>MIT</name>
+      <url>LICENSE.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <scm>
+    <connection>scm:git:git@github.com:venkatramanm/ocr.git</connection>
+    <developerConnection>scm:git:git@github.com:venkatramanm/ocr.git</developerConnection>
+    <url>git@github.com:venkatramanm/ocr.git</url>
+  </scm>
+  <developers>
+    <developer> 
+      <id>venky</id>
+      <name>Venkatraman Mahadevan</name>
+      <email>venkatramanm@yahoo.com</email>
+    </developer>
+  </developers>
+
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.8.2</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
