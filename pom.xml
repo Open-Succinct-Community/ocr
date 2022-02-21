@@ -51,7 +51,7 @@
   <artifactId>ocr</artifactId>
   <packaging>jar</packaging>
   <name>ocr</name>
-  <version>1.12-SNAPSHOT</version>
+  <version>1.12</version>
 
   <description>Commonly used programming tasks in java</description>
   <url>http://maven.apache.org</url>
